@@ -1,75 +1,57 @@
-# Nuxt Minimal Starter
+# File Dropbox
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A self-hosted file upload app with resumable uploads, built with Nuxt 4.
+
+Features:
+
+- Resumable uploads via the [tus protocol](https://tus.io/)
+- Multi-file upload queue with configurable concurrency
+- Drag-and-drop or click-to-select file adding
+- Pause, resume, cancel, and retry uploads
+- Task queue persists across page refreshes (re-drop files to resume interrupted uploads)
+- Automatic filename deduplication on disk
+- Dark / light / system theme
+- Configurable chunk size, retry count, and connection timeout
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+Copy `.env.example` to `.env` and adjust as needed. See [Configuration](#configuration) below.
 
-Start the development server on `http://localhost:3000`:
+## Development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
 
-Build the application for production:
-
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+node .output/server/index.mjs
 ```
 
-Locally preview production build:
+## Configuration
 
-```bash
-# npm
-npm run preview
+| Variable                     | Default             | When       | Description                      |
+|------------------------------|---------------------|------------|----------------------------------|
+| `FILE_DROPBOX_BASE_PATH`     | `/`                 | Build-time | Base URL path (e.g. `/dropbox`)  |
+| `FILE_DROPBOX_UPLOAD_DIR`    | `./uploads`         | Runtime    | Directory for uploaded files     |
+| `FILE_DROPBOX_MAX_FILE_SIZE` | `10737418240`       | Runtime    | Max upload size in bytes (10 GB) |
+| `FILE_DROPBOX_DB_PATH`       | `./data/uploads.db` | Runtime    | SQLite database path             |
+| `FILE_DROPBOX_TRUST_PROXY`   | `false`             | Runtime    | Trust `X-Forwarded-*` headers    |
 
-# pnpm
-pnpm preview
+Build-time variables must be set before `pnpm build`. Runtime variables can be changed between restarts without rebuilding.
 
-# yarn
-yarn preview
+## Scripts
 
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+| Command        | Description              |
+|----------------|--------------------------|
+| `pnpm dev`     | Start development server |
+| `pnpm build`   | Build for production     |
+| `pnpm preview` | Preview production build |
+| `pnpm lint`    | Run ESLint               |
+| `pnpm format`  | Format with Prettier     |
