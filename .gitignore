@@ -24,3 +24,7 @@ logs
 !.env.example
 
 .old/
+
+# App data
+uploads/
+data/
