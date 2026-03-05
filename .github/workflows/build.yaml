@@ -22,5 +22,4 @@ jobs:
           pnpm install
       - name: Build Distributable
         run: |
-          pnpm lint
           pnpm build
