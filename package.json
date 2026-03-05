@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxt/eslint": "1.15.2",
     "@nuxt/hints": "1.0.0-alpha.10",
-    "@nuxt/ui": "4.5.0",
+    "@nuxt/ui": "4.5.1",
     "@tus/file-store": "^2.0.0",
     "@tus/server": "^2.3.0",
     "@vueuse/core": "^14.2.1",
