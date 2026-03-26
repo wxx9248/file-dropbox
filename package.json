@@ -23,7 +23,7 @@
     "nuxt": "^4.4.2",
     "tailwindcss": "^4.2.2",
     "tus-js-client": "^4.3.1",
-    "vue": "^3.5.30",
+    "vue": "^3.5.31",
     "vue-router": "^5.0.4"
   },
   "devDependencies": {
