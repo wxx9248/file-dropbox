@@ -18,8 +18,8 @@ importers:
         specifier: 4.6.1
         version: 4.6.1(@tiptap/extensions@3.22.2(@tiptap/core@3.22.2(@tiptap/pm@3.22.2))(@tiptap/pm@3.22.2))(@tiptap/y-tiptap@3.0.2(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.8)(y-protocols@1.0.7(yjs@13.6.29))(yjs@13.6.29))(change-case@5.4.4)(db0@0.3.4(better-sqlite3@12.9.0))(embla-carousel@8.6.0)(ioredis@5.10.1)(magicast@0.5.2)(tailwindcss@4.2.4)(typescript@5.9.3)(valibot@1.3.1(typescript@5.9.3))(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1)(yaml@2.8.3))(vue-router@5.0.4(@vue/compiler-sfc@3.5.32)(vue@3.5.32(typescript@5.9.3)))(vue@3.5.32(typescript@5.9.3))(yjs@13.6.29)
       '@tus/file-store':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.1.0
+        version: 2.1.0
       '@tus/server':
         specifier: ^2.3.0
         version: 2.3.0
@@ -1500,6 +1500,18 @@ packages:
     resolution: {integrity: sha512-/KCsg3xSlR+nCK8/8ZYSknYxvXHwubJrU82F3Lm1Fp6789VQ0/3RJKfsmRXjqfaTA++23CvC3hqmqe/2GEt6Kw==}
     engines: {node: '>=14'}
 
+  '@redis/client@5.12.1':
+    resolution: {integrity: sha512-7aPGWeqA3uFm43o19umzdl16CEjK/JQGtSXVPevplTaOU3VJA/rseBC1QvYUz9lLDIMBimc4SW/zrW4S89BaCA==}
+    engines: {node: '>= 18.19.0'}
+    peerDependencies:
+      '@node-rs/xxhash': ^1.1.0
+      '@opentelemetry/api': '>=1 <2'
+    peerDependenciesMeta:
+      '@node-rs/xxhash':
+        optional: true
+      '@opentelemetry/api':
+        optional: true
+
   '@remirror/core-constants@3.0.0':
     resolution: {integrity: sha512-42aWfPrimMfDKDi4YegyS7x+/0tlzaqwPQCULLanv3DMIlu96KTJR0fM5isWX2UViOqlGnX6YFgqWepcX+XMNg==}
 
@@ -2067,8 +2079,8 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
 
-  '@tus/file-store@2.0.0':
-    resolution: {integrity: sha512-LTh9L/RoWoo2TbBGPZOuhuyEIIqweoTekT77ZkIVkpYkLK8zTt++PRdY+VyJsLDbFMO9RzvKSBRmj1H8SPdDew==}
+  '@tus/file-store@2.1.0':
+    resolution: {integrity: sha512-RW/aYO2pp0L4AVG6NebPL+Q9FKKtDXF2+skBq3NbOMOEoxWFHSCgtzIX1pBPezFdZDwqdZMIlx+NQGQYYp6/3Q==}
     engines: {node: '>=20.19.0'}
 
   '@tus/server@2.3.0':
@@ -2077,6 +2089,10 @@ packages:
 
   '@tus/utils@0.6.0':
     resolution: {integrity: sha512-GpMpAQfVdC4UDhpsZrRPjGpdXg+JW5MquqMqtObUVsORwLBV6XI67iTT5be+z98THdqb6dl3bTLIElIdgPeo2g==}
+    engines: {node: '>=20.19.0'}
+
+  '@tus/utils@0.7.0':
+    resolution: {integrity: sha512-BPom8lVwR4fkk1EynPeQwuN0e5bH2gBphwt69uF5rS4wRD2N7IyHDPqdjcAY0I7gNEWfUitPyDodywbD4r7dEQ==}
     engines: {node: '>=20.19.0'}
 
   '@tybys/wasm-util@0.10.1':
@@ -7294,6 +7310,11 @@ snapshots:
       yallist: 4.0.0
     optional: true
 
+  '@redis/client@5.12.1':
+    dependencies:
+      cluster-key-slot: 1.1.2
+    optional: true
+
   '@remirror/core-constants@3.0.0': {}
 
   '@rolldown/pluginutils@1.0.0-rc.2': {}
@@ -7787,13 +7808,15 @@ snapshots:
       y-protocols: 1.0.7(yjs@13.6.29)
       yjs: 13.6.29
 
-  '@tus/file-store@2.0.0':
+  '@tus/file-store@2.1.0':
     dependencies:
-      '@tus/utils': 0.6.0
+      '@tus/utils': 0.7.0
       debug: 4.4.3
     optionalDependencies:
-      '@redis/client': 1.6.1
+      '@redis/client': 5.12.1
     transitivePeerDependencies:
+      - '@node-rs/xxhash'
+      - '@opentelemetry/api'
       - supports-color
 
   '@tus/server@2.3.0':
@@ -7810,6 +7833,8 @@ snapshots:
       - supports-color
 
   '@tus/utils@0.6.0': {}
+
+  '@tus/utils@0.7.0': {}
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
