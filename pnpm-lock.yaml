@@ -21,8 +21,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
       '@tus/server':
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.4.1
+        version: 2.4.1
       '@vueuse/core':
         specifier: ^14.3.0
         version: 14.3.0(vue@3.5.34(typescript@5.9.3))
@@ -2135,8 +2135,8 @@ packages:
     resolution: {integrity: sha512-RW/aYO2pp0L4AVG6NebPL+Q9FKKtDXF2+skBq3NbOMOEoxWFHSCgtzIX1pBPezFdZDwqdZMIlx+NQGQYYp6/3Q==}
     engines: {node: '>=20.19.0'}
 
-  '@tus/server@2.4.0':
-    resolution: {integrity: sha512-Bico1dK2X8GSKUltZE6zO5p6er3Xf+u2or3RuMUGVn2wam8petDepONuHINUoF418S/BLeqVf60A8biz9YVFng==}
+  '@tus/server@2.4.1':
+    resolution: {integrity: sha512-WShIwCqtthAL0x++f/VCF6ZpbULjRIYLPumQoOYNHa4NVMxW1pDBAKsNE3Y+rnVTzOttEumIXD1WDNRsIf7x7Q==}
     engines: {node: '>=20.19.0'}
 
   '@tus/utils@0.7.0':
@@ -4955,11 +4955,6 @@ packages:
 
   srvx@0.11.15:
     resolution: {integrity: sha512-iXsux0UcOjdvs0LCMa2Ws3WwcDUozA3JN3BquNXkaFPP7TpRqgunKdEgoZ/uwb1J6xaYHfxtz9Twlh6yzwM6Tg==}
-    engines: {node: '>=20.16.0'}
-    hasBin: true
-
-  srvx@0.8.16:
-    resolution: {integrity: sha512-hmcGW4CgroeSmzgF1Ihwgl+Ths0JqAJ7HwjP2X7e3JzY7u4IydLMcdnlqGQiQGUswz+PO9oh/KtCpOISIvs9QQ==}
     engines: {node: '>=20.16.0'}
     hasBin: true
 
@@ -7846,13 +7841,13 @@ snapshots:
       - '@opentelemetry/api'
       - supports-color
 
-  '@tus/server@2.4.0':
+  '@tus/server@2.4.1':
     dependencies:
       '@tus/utils': 0.7.0
       debug: 4.4.3
       lodash.throttle: 4.1.1
       set-cookie-parser: 2.7.2
-      srvx: 0.8.16
+      srvx: 0.11.15
     optionalDependencies:
       '@redis/client': 5.12.1
       ioredis: 5.10.1
@@ -10998,8 +10993,6 @@ snapshots:
   spdx-license-ids@3.0.23: {}
 
   srvx@0.11.15: {}
-
-  srvx@0.8.16: {}
 
   stable-hash-x@0.2.0: {}
 
