@@ -19,7 +19,7 @@
     "@tus/file-store": "^2.1.0",
     "@tus/server": "^2.4.2",
     "@vueuse/core": "^14.3.0",
-    "better-sqlite3": "^12.11.1",
+    "better-sqlite3": "^13.0.0",
     "nuxt": "^4.4.8",
     "tailwindcss": "^4.3.3",
     "tus-js-client": "^4.3.1",
