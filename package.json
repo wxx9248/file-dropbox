@@ -16,7 +16,7 @@
     "@nuxt/eslint": "1.16.0",
     "@nuxt/hints": "1.1.4",
     "@nuxt/ui": "4.10.0",
-    "@tus/file-store": "^2.1.0",
+    "@tus/file-store": "^2.1.1",
     "@tus/server": "^2.4.3",
     "@vueuse/core": "^14.4.0",
     "better-sqlite3": "^13.0.2",
