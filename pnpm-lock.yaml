@@ -18,8 +18,8 @@ importers:
         specifier: 4.10.0
         version: 4.10.0(b0d2d4417a7ef469275341c465a91cf8)
       '@tus/file-store':
-        specifier: ^2.1.0
-        version: 2.1.0
+        specifier: ^2.1.1
+        version: 2.1.1
       '@tus/server':
         specifier: ^2.4.3
         version: 2.4.3
@@ -2177,16 +2177,12 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
 
-  '@tus/file-store@2.1.0':
-    resolution: {integrity: sha512-RW/aYO2pp0L4AVG6NebPL+Q9FKKtDXF2+skBq3NbOMOEoxWFHSCgtzIX1pBPezFdZDwqdZMIlx+NQGQYYp6/3Q==}
+  '@tus/file-store@2.1.1':
+    resolution: {integrity: sha512-/uXV3Ibb4Upirrsj7lSrX+o08H7IKYEkPHV8TKAPPK6CYUcOMTilluOkwPrb9JZydLSYlIBQkhZZVS9sPEfDwQ==}
     engines: {node: '>=20.19.0'}
 
   '@tus/server@2.4.3':
     resolution: {integrity: sha512-bS0nyuc0xyK+fal9+hawnY3eMfoTSij4LqE328lKEmkl0HLDg4ld6/o5sdYMgzuNvVbvwKb7PdveDvEdqJOsYw==}
-    engines: {node: '>=20.19.0'}
-
-  '@tus/utils@0.7.0':
-    resolution: {integrity: sha512-BPom8lVwR4fkk1EynPeQwuN0e5bH2gBphwt69uF5rS4wRD2N7IyHDPqdjcAY0I7gNEWfUitPyDodywbD4r7dEQ==}
     engines: {node: '>=20.19.0'}
 
   '@tus/utils@0.7.1':
@@ -8161,9 +8157,9 @@ snapshots:
       y-protocols: 1.0.7(yjs@13.6.29)
       yjs: 13.6.29
 
-  '@tus/file-store@2.1.0':
+  '@tus/file-store@2.1.1':
     dependencies:
-      '@tus/utils': 0.7.0
+      '@tus/utils': 0.7.1
       debug: 4.4.3
     optionalDependencies:
       '@redis/client': 5.12.1
@@ -8186,8 +8182,6 @@ snapshots:
       - '@node-rs/xxhash'
       - '@opentelemetry/api'
       - supports-color
-
-  '@tus/utils@0.7.0': {}
 
   '@tus/utils@0.7.1': {}
 
