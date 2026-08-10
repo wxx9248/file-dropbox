@@ -13,7 +13,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@nuxt/eslint": "1.16.0",
+    "@nuxt/eslint": "1.17.0",
     "@nuxt/hints": "1.1.4",
     "@nuxt/ui": "4.10.0",
     "@tus/file-store": "^2.1.1",
