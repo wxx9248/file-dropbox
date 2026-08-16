@@ -2,6 +2,7 @@ import type { HttpRequest, HttpResponse, HttpStack } from "tus-js-client";
 import * as tus from "tus-js-client";
 import { useSettings } from "./useSettings";
 import { formatFileSize } from "~/utils/format";
+import { randomUUID } from "~/utils/uuid";
 
 export type TaskStatus =
   | "queued"
@@ -318,7 +319,7 @@ function createUploadQueue() {
 
       // Create new task
       tasks.value.push({
-        id: crypto.randomUUID(),
+        id: randomUUID(),
         file,
         filename: file.name,
         size: file.size,
