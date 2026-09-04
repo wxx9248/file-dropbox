@@ -21,8 +21,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1(supports-color@10.2.2)
       '@tus/server':
-        specifier: ^2.4.4
-        version: 2.4.4(supports-color@10.2.2)
+        specifier: ^2.4.5
+        version: 2.4.5(supports-color@10.2.2)
       '@vueuse/core':
         specifier: ^14.4.0
         version: 14.4.0(vue@3.5.41(typescript@5.9.3))
@@ -1900,8 +1900,8 @@ packages:
     resolution: {integrity: sha512-/uXV3Ibb4Upirrsj7lSrX+o08H7IKYEkPHV8TKAPPK6CYUcOMTilluOkwPrb9JZydLSYlIBQkhZZVS9sPEfDwQ==}
     engines: {node: '>=20.19.0'}
 
-  '@tus/server@2.4.4':
-    resolution: {integrity: sha512-Qqhu4IqRKHP3ycGc/fjmzTqrytJjpnHt4BChljla0FZgTU4kxSAS52Z++GlSw/6qlNwkd7vHAf5YQphn+nfewQ==}
+  '@tus/server@2.4.5':
+    resolution: {integrity: sha512-DaQY5F1/JC1E+eDNY+Q5L08wgQ8NHFDNW/E6NclSx10BOHJk85BT4mSId49Ep890Utsk+6hEEuhNFb/LH+Og0w==}
     engines: {node: '>=20.19.0'}
 
   '@tus/utils@0.7.1':
@@ -7808,7 +7808,7 @@ snapshots:
       - '@opentelemetry/api'
       - supports-color
 
-  '@tus/server@2.4.4(supports-color@10.2.2)':
+  '@tus/server@2.4.5(supports-color@10.2.2)':
     dependencies:
       '@tus/utils': 0.7.1
       debug: 4.4.3(supports-color@10.2.2)
