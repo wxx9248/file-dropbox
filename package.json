@@ -18,7 +18,7 @@
     "@nuxt/ui": "4.11.1",
     "@tus/file-store": "^2.1.1",
     "@tus/server": "^2.4.5",
-    "@vueuse/core": "^14.4.0",
+    "@vueuse/core": "^15.0.0",
     "better-sqlite3": "^13.0.3",
     "nuxt": "^4.5.2",
     "tailwindcss": "^4.3.3",
