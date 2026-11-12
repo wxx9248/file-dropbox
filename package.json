@@ -21,10 +21,10 @@
     "@vueuse/core": "^15.0.0",
     "better-sqlite3": "^13.0.3",
     "nuxt": "^4.6.4",
-    "tailwindcss": "^4.3.4",
+    "tailwindcss": "^4.3.5",
     "tus-js-client": "^4.3.1",
-    "vue": "^3.5.44",
-    "vue-router": "^5.4.0"
+    "vue": "^3.5.45",
+    "vue-router": "^5.5.0"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",
