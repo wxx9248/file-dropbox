@@ -15,20 +15,20 @@
   "dependencies": {
     "@nuxt/eslint": "1.17.0",
     "@nuxt/hints": "1.1.5",
-    "@nuxt/ui": "4.12.0",
+    "@nuxt/ui": "4.12.2",
     "@tus/file-store": "^2.1.2",
     "@tus/server": "^2.4.7",
     "@vueuse/core": "^15.0.0",
-    "better-sqlite3": "^13.0.3",
+    "better-sqlite3": "^13.2.0",
     "nuxt": "^4.6.4",
     "tailwindcss": "^4.3.5",
     "tus-js-client": "^4.3.1",
     "vue": "^3.5.45",
-    "vue-router": "^5.5.0"
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^9.6.0",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.1",
     "prettier-plugin-tailwindcss": "^0.8.1"
   },
   "pnpm": {
